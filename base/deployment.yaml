@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: core-suite-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: core-suite-frontend
+  template:
+    metadata:
+      labels:
+        app: core-suite-frontend
+    spec:
+      containers:
+        - name: core-suite-frontend
+          image: core-suite-frontend-image
