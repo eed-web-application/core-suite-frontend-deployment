@@ -25,7 +25,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.GH_TOKEN }}
 
       - name: Add docker metadata
         id: meta
@@ -57,4 +57,4 @@ jobs:
       - run: |
           gh workflow --repo eed-web-application/core-suite-frontend-deployment run Deploy -f image="${{needs.create-image.outputs.IMAGE_TO_DEPLOY}}"
         env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOYMENT_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
