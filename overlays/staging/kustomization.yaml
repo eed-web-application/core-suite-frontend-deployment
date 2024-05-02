@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
   - ../../base
 images:
-  - name: elog-plus-frontend-image
-    newName: ghcr.io/eed-web-application/core-suite-frontend:sha-d0f7723
+  - name: core-suite-frontend-image
+    newName: ghcr.io/eed-web-application/core-suite-frontend:sha-6e83282
