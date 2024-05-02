@@ -8,6 +8,7 @@ env:
 
 jobs:
   create-image:
+    permissions: write-all
     runs-on: ubuntu-latest
 
     outputs:
