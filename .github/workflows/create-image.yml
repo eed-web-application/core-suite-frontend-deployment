@@ -53,9 +53,7 @@ jobs:
   deploy:
     name: Start Deployment
     runs-on: ubuntu-latest
-    needs: 
-      - create-image
-      - deploy-staging 
+    needs: create-image
     steps:
       - uses: Nastaliss/get-github-app-pat@v1
         id: githubAppAuth
