@@ -27,10 +27,10 @@ spec:
                 name: core-suite-frontend-service
                 port:
                   number: 80
-          # - pathType: Prefix
-          #   path: /cis(.*)
-          #   backend:
-          #     service:
-          #       name: core-suite-frontend-service
-          #       port:
-          #         number: 80
+          - pathType: Prefix
+            path: /cis(.*)
+            backend:
+              service:
+                name: core-suite-frontend-service
+                port:
+                  number: 80
