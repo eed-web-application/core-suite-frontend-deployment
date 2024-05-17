@@ -4,4 +4,4 @@ resources:
   - ../../base
 images:
   - name: core-suite-frontend-image
-    newName: ghcr.io/eed-web-application/core-suite-frontend:sha-5a3b1ac
+    newName: ghcr.io/eed-web-application/core-suite-frontend:sha-c6203f6
